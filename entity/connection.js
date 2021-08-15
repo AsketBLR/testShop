@@ -1,4 +1,5 @@
-const {Sequelize} = require('sequelize')
+const {Sequelize} = require('sequelize');
+
 
 module.exports = new Sequelize({
     host: process.env.DB_HOST,
@@ -6,6 +7,7 @@ module.exports = new Sequelize({
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    dialect: "mariadb",
+    dialect: 'mariadb',
     logging: false
 });
+
